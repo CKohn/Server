@@ -1,0 +1,2 @@
+Wed Nov 29 21:27:10 2017 => 2 mobile paid 3 the amount of 2145266127, user bank post-payment for 2 equals $2217520 and for 2 equals $2145266277
+Wed Nov 29 21:33:04 2017 => 3 mobile paid 2 the amount of 2145016127, user bank post-payment for 3 equals $250150 and for 3 equals $2147233647
