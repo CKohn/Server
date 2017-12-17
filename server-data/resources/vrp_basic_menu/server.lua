@@ -110,22 +110,73 @@ police_weapons["Rota"] = {function(player,choice)
     vRPclient.giveWeapons(player,{{
 	  ["WEAPON_COMBATPISTOL"] = {ammo=200},
 	  ["WEAPON_PUMPSHOTGUN"] = {ammo=20},
+	  ["WEAPON_SPECIALCARBINE"] = {ammo=200},
 	  ["WEAPON_NIGHTSTICK"] = {ammo=200},
 	  ["WEAPON_MARKSMANRIFLE"] = {ammo=200},
 	  ["WEAPON_STUNGUN"] = {ammo=200}
 	}, true})
 end}
-
-police_weapons["Policia Militar"] = {function(player,choice)
+police_weapons["Forca Tatica"] = {function(player,choice)
     vRPclient.giveWeapons(player,{{
 	  ["WEAPON_COMBATPISTOL"] = {ammo=200},
+	  ["WEAPON_SPECIALCARBINE"] = {ammo=200},
 	  ["WEAPON_PUMPSHOTGUN"] = {ammo=20},
 	  ["WEAPON_NIGHTSTICK"] = {ammo=200},
-	  ["WEAPON_SMG"] = {ammo=200},
+	  ["WEAPON_STUNGUN"] = {ammo=200}
+	}, true})
+end}
+local pm1_weapons = {}
+pm1_weapons["Policia Militar"] = {function(player,choice)
+    vRPclient.giveWeapons(player,{{
+	  ["WEAPON_COMBATPISTOL"] = {ammo=200},
+	  ["WEAPON_NIGHTSTICK"] = {ammo=200},
 	  ["WEAPON_STUNGUN"] = {ammo=200}
 	}, true})
 end}
 
+--police_weapons["Policia Civil"] = {function(player,choice)
+    --vRPclient.giveWeapons(player,{{
+	  --["WEAPON_COMBATPISTOL"] = {ammo=200},
+	  --["WEAPON_NIGHTSTICK"] = {ammo=200},
+	  --["WEAPON_STUNGUN"] = {ammo=200}
+	--}, true})
+--end}
+police_weapons["GARRA"] = {function(player,choice)
+    vRPclient.giveWeapons(player,{{
+	  ["WEAPON_COMBATPISTOL"] = {ammo=200},
+	  ["WEAPON_NIGHTSTICK"] = {ammo=200},
+	  ["WEAPON_SPECIALCARBINE"] = {ammo=200},
+	  ["WEAPON_STUNGUN"] = {ammo=200},
+	  ["WEAPON_PUMPSHOTGUN"] = {ammo=20},
+	  ["WEAPON_BZGAS"] = {ammo=5}
+	}, true})
+end}
+police_weapons["Rocam"] = {function(player,choice)
+    vRPclient.giveWeapons(player,{{
+	  ["WEAPON_APPISTOL"] = {ammo=120},
+	  ["WEAPON_NIGHTSTICK"] = {ammo=200},
+	  ["WEAPON_STUNGUN"] = {ammo=200}
+	  
+	}, true})
+end}
+police_weapons["Policia Federal"] = {function(player,choice)
+    vRPclient.giveWeapons(player,{{
+	  ["WEAPON_COMBATPISTOL"] = {ammo=200},
+	  ["WEAPON_SPECIALCARBINE"] = {ammo=200},
+	  ["WEAPON_STUNGUN"] = {ammo=200},
+	  ["WEAPON_PUMPSHOTGUN"] = {ammo=20}
+	}, true})
+end}
+police_weapons["COT-Policia Federal"] = {function(player,choice)
+    vRPclient.giveWeapons(player,{{
+	  ["WEAPON_COMBATPISTOL"] = {ammo=200},
+	  ["WEAPON_SPECIALCARBINE"] = {ammo=200},
+	  ["WEAPON_STUNGUN"] = {ammo=200},
+	  ["WEAPON_PUMPSHOTGUN"] = {ammo=20},
+	  ["WEAPON_BZGAS"] = {ammo=10},
+	  ["WEAPON_HEAVYSNIPER"] = {ammo=50}
+	}, true})
+end}
 police_weapons["Colete"] = {function(player,choice)
     BMclient.setArmour(player,{100,true})
 end}
@@ -1082,7 +1133,7 @@ vRP.registerMenuBuilder({"police", function(add, data)
     end
 	
 	if vRP.hasPermission({user_id,"police.easy_fine"}) then
-      choices["Multar Fácil"] = ch_fine -- Fines closeby player
+      choices["Multar Fï¿½cil"] = ch_fine -- Fines closeby player
     end
 	
 	if vRP.hasPermission({user_id,"police.easy_cuff"}) then
